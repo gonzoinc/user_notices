@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Faces Client">
+    <description>The coding standard for Bronto Faces</description>
+
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+
+    <arg name="report" value="full"/>
+    <arg name="report-file" value="./logs/codeSniffReport.txt"/>
+    <arg name="extensions" value="php"/>
+    <arg name="tab-width" value="4"/>
+    <arg name="encoding" value="utf-8"/>
+    <arg name="colors"/>
+    <arg value="nsp"/>
+
+    <rule ref="PSR2">
+    </rule>
+
+    <rule ref="PSR1.Methods.CamelCapsMethodName.NotCamelCaps">
+        <exclude-pattern>*/src/DB/*</exclude-pattern>
+    </rule>
+
+</ruleset>
